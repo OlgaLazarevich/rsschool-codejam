@@ -1,6 +1,13 @@
 {
   "name": "codejam",
   "version": "1.0.0",
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true,
+      "mocha": true
+    }
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -21,6 +28,7 @@
     "eslint": "^5.8.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-airbnb-base": "file:node_modules/eslint-config-airbnb-base",
-    "eslint-plugin-import": "^2.14.0"
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0"
   }
 }
