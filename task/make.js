@@ -1,6 +1,4 @@
-'use strict';
-
-function make(first) {
+module.exports = function make(first) {
   let firstArg = [...arguments];
 
   return function (second) {
@@ -9,6 +7,6 @@ function make(first) {
     return (fun) => allArgs.reduce(fun);
   };
 }
-function sum(a, b) {
-  return a + b;
-}
+// function sum(a, b) {
+//   return a + b;
+// }
