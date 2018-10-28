@@ -3,7 +3,7 @@ const sumOfOther = require('../task/sumOfOther.js');
 
 describe('sumOfOther', () => {
   it('0', () => {
-    const count = sumOfOther([1,1,1]);
+    const count = sumOfOther([1, 1, 1]);
     assert.deepEqual(count, [2, 2, 2]);
   });
   it('2', () => {
