@@ -7,7 +7,7 @@ function make(first) {
         let secondArg = [...arguments],
             allArgs = [...firstArg, ...secondArg];
 
-        return  (fun) => allArgs.reduce(fun);
+        return (fun) => allArgs.reduce(fun);
     };
 }
 function sum(a, b) {
