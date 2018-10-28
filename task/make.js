@@ -1,15 +1,14 @@
-"use strict";
+'use strict';
+
 function make(first) {
-    let firstArg = [...arguments];
+  let firstArg = [...arguments];
 
-    return function (second) {
-        
-        let secondArg = [...arguments],
-            allArgs = [...firstArg, ...secondArg];
-
-        return (fun) => allArgs.reduce(fun);
-    };
+  return function (second) {
+    const secondArg = [...arguments];
+    const allArgs = [...firstArg, ...secondArg];
+    return (fun) => allArgs.reduce(fun);
+  };
 }
 function sum(a, b) {
-    return a + b;
+  return a + b;
 }
